@@ -10,15 +10,15 @@ section_titles:
     timeline: "⏳ 建站历程"
 
 profile:
-    name: "你的名字"
-    role: "开发者 / 博主"
-    bio: "一个热爱技术的开发者，分享知识和经验。"
-    tags: ["Hugo", "Web开发", "开源"]
+    name: "奈若琳"
+    role: "高中牲"
+    bio: "一些乱七八糟的东西，欢迎朋友们来玩"
+    tags: ["clari", "随笔", "冷知识/冷笑话/各种来不及落实的点子？","某些随机博客"]
 
 links:
-  - title: GitHub
-    description: 我的 GitHub 主页，包含开源项目。
-    website: https://github.com/liu-houliang
+  - title: https://github.com/Explorer-lr
+    description: 我的 GitHub 主页，啥也没有。
+    website: 就这个
     image: brand-github
   - title: Hugo
     description: 世界上最快的静态网站构建框架。
@@ -27,14 +27,14 @@ links:
 
 about_me:
   - label: "职业"
-    text: "开发者"
+    text: "学生"
     icon: "briefcase"
   - label: "爱好"
-    text: "编程 / 阅读 / 旅行"
+    text: "阅读 / 骑行 / 随便什么好玩的东西"
     icon: "bike"
   - label: "邮箱"
-    text: "your@email.com"
-    link: "mailto:your@email.com"
+    text: "保密"
+    link: "bugaosuni@email.com"
     icon: "mail"
 
 about_site:
@@ -55,7 +55,7 @@ about_site:
 ## ⏳ 建站历程
 
 {{< timeline >}}
-    {{< timeline-item date="2024-01" >}}
+    {{< timeline-item date="2026-09" >}}
     使用 Hugo 和 Stack 主题搭建了这个博客。
     {{< /timeline-item >}}
     
