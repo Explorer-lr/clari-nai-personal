@@ -1,7 +1,7 @@
 # Change baseurl before deploy
-baseurl      = "https://liu-houliang.github.io/hugo-stack-starter/"
+baseurl      = "https://Explorer-Ir.github.io/clari-nai-personal/"
 languageCode = "zh-cn"
-title        = "Hugo Theme Stack Starter Template"
+title        = "Clari-Nai-Personal-Blog"
 
 # Set default language
 defaultContentLanguage = "zh"
