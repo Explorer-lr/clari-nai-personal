@@ -27,7 +27,7 @@
     
 [comments.waline]
     # IMPORTANT: Replace this with your own Waline server URL!
-    serverURL    = "https://waline-demo.liuhouliang.com/"
+    serverURL    = "https://mycomments-c8fjxqe7w-clari-personal.vercel.app/"
     pageview     = true
     emoji        = ["https://unpkg.com/@waline/emojis@1.0.1/weibo"]
     requiredMeta = ["name"]
