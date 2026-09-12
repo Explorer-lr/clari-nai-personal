@@ -5,7 +5,7 @@ date: 2026-09-12         # 发布日期
 lastmod: 2026-09-12       # 最后修改日期（可选）
 draft: false              # true = 草稿，不会发布
 categories:
-    -  Dreams        # 分类（建议只选一个）
+    -  Journal       # 分类（建议只选一个）
 tags:
     - Dreams
 image: cover.jpg          # 封面图（相对于文章目录）
