@@ -436,6 +436,28 @@
     {{ partialCached "comments/provider/waline" . }}
 
 </div>
+<div class="heatmap-wrap">
+  <h2 class="heatmap-title">写作热力图</h2>
+  <div class="heatmap-legend">
+    <span>少</span>
+    <span class="cell lv0"></span>
+    <span class="cell lv1"></span>
+    <span class="cell lv2"></span>
+    <span class="cell lv3"></span>
+    <span class="cell lv4"></span>
+    <span>多</span>
+  </div>
+  <div id="heatmap" class="heatmap"></div>
+  <div class="heatmap-stats">
+    <span>总文章：<b id="hm-total">0</b></span>
+    <span>写作天数：<b id="hm-days">0</b></span>
+    <span>当前连续：<b id="hm-streak">0</b> 天</span>
+    <span>最长连续：<b id="hm-max-streak">0</b> 天</span>
+  </div>
+</div>
+
+{{ partial "heatmap-data.html" . }}
+<script src="/js/heatmap.js" defer></script>
 
 {{ partialCached "footer/footer" . }}
 {{ end }}
