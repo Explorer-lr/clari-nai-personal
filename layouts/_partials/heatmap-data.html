@@ -1,0 +1,11 @@
+{{- $posts := where .Site.RegularPages "Section" "posts" -}}
+{{- $counts := dict -}}
+{{- range $posts -}}
+  {{- $d := .Date.Format "2006-01-02" -}}
+  {{- $cur := index $counts $d | default 0 -}}
+  {{- $counts = merge $counts (dict $d (add $cur 1)) -}}
+{{- end -}}
+<script>
+  window.__HEATMAP_DATA__ = {{ $counts | jsonify | safeJS }};
+  window.__HEATMAP_TODAY__ = "{{ now.Format "2006-01-02" }}";
+</script>
