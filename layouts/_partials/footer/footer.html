@@ -60,33 +60,7 @@
   <div class="pet-bubble" id="pet-bubble"></div>
   <div class="pet-body" id="pet-body">🐱</div>
 </div>
-
-{{ $petCss := resources.Get "scss/pet.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $petCss.RelPermalink }}" integrity="{{ $petCss.Data.Integrity }}">
-
+<link rel="stylesheet" href="/css/pet.css">
 <script src="/js/pet.js" defer></script>
-<div id="desk-pet" class="desk-pet">
-  <div class="pet-bubble" id="pet-bubble"></div>
 
-  <!-- 好感面板 -->
-  <div class="pet-stats" id="pet-stats">
-    <div class="stat-row">
-      <span>❤️ 好感</span>
-      <div class="bar"><div class="bar-fill" id="bar-affection"></div></div>
-      <span id="num-affection">20</span>
-    </div>
-    <div class="stat-row">
-      <span>🍖 猫粮</span><span id="num-food">3</span>
-      <button class="pet-btn" id="btn-feed">喂食</button>
-    </div>
-    <div class="stat-row">
-      <span>🧸 玩具</span><span id="num-toys">1</span>
-      <button class="pet-btn" id="btn-play">玩耍</button>
-    </div>
-  </div>
 
-  <div class="pet-body" id="pet-body">🐱</div>
-</div>
-<script>
-  window.__ARTICLE_COUNT__ = {{ len (where .Site.RegularPages "Section" "posts") }};
-</script>
