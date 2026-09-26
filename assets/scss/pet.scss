@@ -1,0 +1,42 @@
+.desk-pet {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 9999;
+  cursor: grab;
+  user-select: none;
+  transition: transform 0.1s;
+  will-change: transform;
+}
+.desk-pet:active { cursor: grabbing; }
+
+.pet-body {
+  font-size: 56px;
+  line-height: 80px;
+  text-align: center;
+  animation: pet-idle 2s ease-in-out infinite;
+}
+
+@keyframes pet-idle {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+
+.pet-bubble {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background: #fff;
+  color: #333;
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-size: 13px;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(0,0,0,.15);
+  transition: transform .2s;
+  pointer-events: none;
+}
+.pet-bubble.show { transform: translateX(-50%) scale(1); }
