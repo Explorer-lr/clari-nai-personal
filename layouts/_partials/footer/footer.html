@@ -60,7 +60,8 @@
   <div class="pet-bubble" id="pet-bubble"></div>
   <div class="pet-body" id="pet-body">🐱</div>
 </div>
-<link rel="stylesheet" href="/css/pet.css">
+{{ $petCss := resources.Get "scss/pet.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $petCss.RelPermalink }}">
 <script src="/js/pet.js" defer></script>
 
 
