@@ -1,42 +1,23 @@
 .desk-pet {
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 80px;
-  height: 80px;
+  left: 40px;
+  top: 80px;
+  width: 160px;
+  height: 160px;
   z-index: 9999;
   cursor: grab;
   user-select: none;
-  transition: transform 0.1s;
   will-change: transform;
+  animation: float 3s ease-in-out infinite;  /* 气球飘 */
 }
-.desk-pet:active { cursor: grabbing; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
 
 .pet-body {
-  font-size: 56px;
-  line-height: 80px;
+  font-size: 120px;
+  line-height: 160px;
   text-align: center;
-  animation: pet-idle 2s ease-in-out infinite;
 }
-
-@keyframes pet-idle {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-6px); }
-}
-
-.pet-bubble {
-  position: absolute;
-  bottom: 90px;
-  left: 50%;
-  transform: translateX(-50%) scale(0);
-  background: #fff;
-  color: #333;
-  border-radius: 12px;
-  padding: 8px 12px;
-  font-size: 13px;
-  white-space: nowrap;
-  box-shadow: 0 4px 16px rgba(0,0,0,.15);
-  transition: transform .2s;
-  pointer-events: none;
-}
-.pet-bubble.show { transform: translateX(-50%) scale(1); }
