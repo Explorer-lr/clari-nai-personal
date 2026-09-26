@@ -55,20 +55,7 @@
         {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} | {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
     </section>
 </footer>
-<style>
-#desk-pet {
-  position: fixed !important;
-  left: 40px !important;
-  top: 100px !important;
-  width: 160px !important;
-  height: 160px !important;
-  z-index: 99999 !important;
-  font-size: 120px !important;
-  line-height: 160px !important;
-  text-align: center !important;
-  pointer-events: auto !important;
-}
-</style>
+
 
 <div id="desk-pet" class="desk-pet">
   <div class="pet-bubble" id="pet-bubble"></div>
