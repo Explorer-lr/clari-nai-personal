@@ -40,3 +40,55 @@
   pointer-events: none;
 }
 .pet-bubble.show { transform: translateX(-50%) scale(1); }
+.pet-stats {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,.95);
+  border-radius: 12px;
+  padding: 8px 10px;
+  font-size: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.15);
+  width: 180px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+}
+.desk-pet:hover .pet-stats {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0;
+}
+.bar {
+  flex: 1;
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #ff7b7b, #ff4d4d);
+  transition: width .4s;
+}
+.pet-btn {
+  font-size: 11px;
+  padding: 2px 6px;
+  border: none;
+  border-radius: 6px;
+  background: #4dabf7;
+  color: #fff;
+  cursor: pointer;
+}
+.pet-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
