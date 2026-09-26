@@ -1,15 +1,22 @@
-.desk-pet {
-  position: fixed;
-  left: 40px;
-  top: 80px;
-  width: 160px;
-  height: 160px;
-  z-index: 9999;
-  cursor: grab;
-  user-select: none;
-  will-change: transform;
-  animation: float 3s ease-in-out infinite;  /* 气球飘 */
+<style>
+#desk-pet {
+  position: fixed !important;
+  left: 40px !important;
+  top: 100px !important;
+  width: 160px !important;
+  height: 160px !important;
+  z-index: 99999 !important;
+  font-size: 120px !important;
+  line-height: 160px !important;
+  text-align: center !important;
+  pointer-events: auto !important;
 }
+</style>
+
+<div id="desk-pet" class="desk-pet">
+  <div class="pet-bubble" id="pet-bubble"></div>
+  <div class="pet-body" id="pet-body">🐱</div>
+</div>
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
