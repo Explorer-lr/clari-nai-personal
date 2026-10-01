@@ -9,5 +9,4 @@ tags:
     - Maths
 image: cover.jpg          # 封面图（相对于文章目录）
 ---
-![正太镇楼](screenshot.png)
-
+10.1开始更新
